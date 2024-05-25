@@ -1,0 +1,10 @@
+---
+- name: Running on the Ansible server
+  hosts: localhost
+  connection: local
+  # gather_facts: no
+  tasks:
+    - debug:
+        msg: 'Running on localhost congtt2'
+    - debug:
+        msg: 'Demo tu github'

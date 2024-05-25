@@ -1,0 +1,16 @@
+---
+- name: Rulebook login vcenter 
+  hosts: all
+
+  sources:
+    - ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 5001
+
+  rules:
+    - name: login vcenter 
+      condition: event.payload.backlog[0].fields.vmw_login_action == "Successful"
+      action:
+        run_job_template:
+          name: get-info-datacenter-vlware # Ten cua template tren AWX server
+          organization: Default
