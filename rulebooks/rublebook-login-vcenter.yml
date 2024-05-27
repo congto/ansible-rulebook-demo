@@ -12,5 +12,5 @@
       condition: event.payload.backlog[0].fields.vmw_login_action == "Successful"
       action:
         run_job_template:
-          name: playbook-demo # Ten cua template tren AWX server
+          name: login-vcenter # Ten cua template tren AWX server
           organization: Default
