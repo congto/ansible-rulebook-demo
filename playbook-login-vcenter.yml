@@ -5,7 +5,7 @@
   # gather_facts: no
   tasks:
     - debug:
-        msg: "{{ansible_eda.event.payload.backlog[0].fields.message}}"
+        msg: "{{ansible_eda.event.payload.backlog[0].message}}"
 
     # - name: Sending an e-mail html fomat
     #   community.general.mail:
