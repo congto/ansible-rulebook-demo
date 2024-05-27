@@ -5,7 +5,7 @@
   # gather_facts: no
   tasks:
     - debug:
-        msg: '{{ vmw_mess }} \n {{ vmw_action }}'
+        msg: '{{ vmw_mess }} ok'
 
     # - name: Sending an e-mail html fomat
     #   community.general.mail:
