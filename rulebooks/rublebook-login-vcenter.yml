@@ -17,3 +17,4 @@
           job_args:
             extra_vars:
               vmw_mess: "{{ event.payload.backlog[0].fields.vmw_login_action }}"
+              vmw_action: "{{ event.payload.backlog[0].message }}"
